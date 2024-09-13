@@ -1,7 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { AvaliacaoEstrelasComponent } from './avaliacao-estrelas.component';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { forwardRef } from '@angular/core';
+
+import { AvaliacaoEstrelasComponent } from './avaliacao-estrelas.component';
 
 describe('AvaliacaoEstrelasComponent', () => {
   let component: AvaliacaoEstrelasComponent;
@@ -60,6 +61,22 @@ describe('AvaliacaoEstrelasComponent', () => {
     expect(onChangeSpy).not.toHaveBeenCalled();
     expect(component.classificacao).not.toBe(classificacao);
   });
+
+  it('deveria ignorar valores inválidos e atribuir o valor 1 a classificação', () => {
+    const valoresInvalidos = [0, -6, 'abc', undefined];
+    valoresInvalidos.forEach(valorInvalido => {
+        component.writeValue(valorInvalido as any);
+        expect(component.classificacao).toBe(1);
+    })
+  });
+  it('deveria atualizar o DOM quando a  classificação muda', () => {
+    const classificacao = 3;
+    component.classificar(classificacao);
+    fixture.detectChanges();
+
+    const estrelaPreenchida = fixture.nativeElement.querySelector('.filled');
+    expect(estrelaPreenchida).toBeTruthy();
+});
 
 })
 
