@@ -2,25 +2,11 @@
 
 O Organo é um aplicativo organizador de leituras que permite cadastrar livros, incluindo informações como título, autoria, imagem, gênero, data da leitura e classificação.
 
-## 🔨 Funcionalidades do projeto
-
-`Cadastro de livros`: Permite adicionar novos livros à lista, inserindo informações como título, autoria, imagem, gênero, data da leitura e classificação.
-
-`Listagem de livros`: Exibe os livros cadastrados, separados por gênero literário, exibindo a imagem e demais informações.
-
 ## ✔️ Técnicas e tecnologias utilizadas
-
-As técnicas e tecnologias utilizadas pra isso são:
-
 
 `Angular`: Framework utilizado para construir a aplicação, na versão 17.
 
 `Jest`: Estrutura de teste utilizada para realizar testes de unidade.
-
-## 📁 Link do Figma
-
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/GYv8FnRc51ZDfGmi2zzaQb/Organo-%7C-Angular?type=design&node-id=134-128&mode=design).
-
 
 ## 🛠️ Abrir e rodar o projeto
 
@@ -34,3 +20,21 @@ Depois, para executar o projeto em modo desenvolvimento:
 ng serve
 ```
 Então, acesse [http://localhost:4200/](url) no seu navegador.
+
+
+
+![Demonstração da Aplicação](src/assets/readme/desktop1.png)
+![Demonstração da Aplicação](src/assets/readme/desktop2.png)
+![Demonstração da Aplicação](src/assets/readme/desktop3.png)
+![Demonstração da Aplicação](src/assets/readme/desktop4.png)
+![Demonstração da Aplicação](src/assets/readme/desktop5.png)
+![Demonstração da Aplicação](src/assets/readme/desktop6.png)
+![Demonstração da Aplicação](src/assets/readme/desktop7.png)
+![Demonstração da Aplicação](src/assets/readme/celular1.png)
+![Demonstração da Aplicação](src/assets/readme/celular2.png)
+![Demonstração da Aplicação](src/assets/readme/celular3.png)
+![Demonstração da Aplicação](src/assets/readme/celular4.png)
+![Demonstração da Aplicação](src/assets/readme/celular5.png)
+![Demonstração da Aplicação](src/assets/readme/celular6.png)
+![Demonstração da Aplicação](src/assets/readme/celular7.png)
+
