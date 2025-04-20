@@ -4,6 +4,14 @@ body, html {
 }
 
 :root {
-  --font-montserrat: 'Montserrat', sans-serif; 
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-prata: 'Prata', serif;
+
+  --color-primaria: #6278F7;
+  --color-segundaria: #2E2E2E;
+
+
+  --font-weigh-normal: 400;
+  --font-weigh-bold: 700;
 }
 

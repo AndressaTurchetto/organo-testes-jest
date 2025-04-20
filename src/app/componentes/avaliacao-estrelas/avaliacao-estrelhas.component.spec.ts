@@ -32,7 +32,7 @@ describe('AvaliacaoEstrelasComponent', () => {
   it('deveria atribuir um valor para a classificação quando o método writeValue for chamado', () => {
     const classificacao = 3;
     component.writeValue(classificacao);
-    
+
     expect(component.classificacao).toBe(classificacao);
   });
 
@@ -40,7 +40,7 @@ describe('AvaliacaoEstrelasComponent', () => {
     const onChangeSpy = jest.spyOn(component, 'onChange');
     const classificacao = 4;
     component.classificar(classificacao);
-    
+
     expect(onChangeSpy).toHaveBeenCalled();
   });
 
@@ -48,7 +48,7 @@ describe('AvaliacaoEstrelasComponent', () => {
     const onTouched = jest.spyOn(component, 'onTouched');
     const classificacao = 4;
     component.classificar(classificacao);
-    
+
     expect(onTouched).toHaveBeenCalled();
   });
 
@@ -57,7 +57,7 @@ describe('AvaliacaoEstrelasComponent', () => {
     component.readOnly = true;
     const classificacao = 5;
     component.classificar(classificacao);
-    
+
     expect(onChangeSpy).not.toHaveBeenCalled();
     expect(component.classificacao).not.toBe(classificacao);
   });
